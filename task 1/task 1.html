@@ -2,29 +2,50 @@
 <html>
     <head></head>
     <body>
-        <form autocomplete="off">
+        <form autocomplete="off" method="post">
             <h2>Registration Form</h2>
             <div>
-                <label> First Name:</label>
-                <input name="firstName" required placeholder="enter your first name" pattern="[A-Za-z]">
+                <label for="firstName"> First Name:</label>
+                <input name="firstName" id="firstName"  placeholder="enter your first name" pattern="[A-Za-z]">
             </div>
+            <br>
             <div>
-                <label> phone:</label>
-                <input name="phone" type="number" placeholder="enter your phone number" pattern="">
+                <label for="phone"> phone:</label>
+                <input name="phone" id="phone" type="tel" maxlength="11" minlength="11" placeholder="enter your phone number" pattern="01[012][0-9]{8}">
             </div>
+            <br>
             <div>
-                <label>check your course</label>
-                <label></label>
+                <label>Enter your course : </label>
+                <input list="course" name="course" >
+                <datalist id="course" >
+                    <option disabled selected >Choose your course</option>
+                    <option value="ForntEnd" >ForntEnd</option>
+                    <option value="BackEnd">BackEnd</option>
+                    <option value="Network">Network</option>
+                    <option value="Mobile">Mobile</option>
+                </datalist>
             </div>
+            <br>
             <div>
                 <label>img:</label>
-                <input type="file" multiple pattern=".png">
+                <input type="file" multiple accept=".png,image/png">
             </div>
+            <br>
             <div>
-                <label for="">date</label>
-                <input type="date" required>
+                <label>comment</label>
+                <textarea name="comment" minlength="20" maxlength="100" placeholder="enter your comment" ></textarea>
             </div>
-
+            <br>
+            <div>
+                <label for="date">date:</label>
+                <input type="date"  id="date" required>
+            </div>
+            <br>
+            <div>
+                <label for="userId">ID:</label>
+                <input name="ID" type="number" id="userId"  placeholder="enter your ID">
+            </div>
+            <br>
             <div>
                 <button>Register</button>
             </div>
