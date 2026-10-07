@@ -2,7 +2,9 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
     box-sizing: border-box;
+    
 }
 ul{
     list-style: none;
@@ -13,50 +15,111 @@ a{
 }
 /*global classes*/
 .bg-nav{
-    background-color: darkslateblue;
+    background-color: darkblue;
+    position: sticky;
+    top:0;
+    z-index: 999999;
 }
-
-
+.text-gray{
+    color: gray;
+}
+.main-icon{
+    color: goldenrod;
+    font-size: 25px;
+}
+.title-container{
+    
+    margin: auto;
+    width: 90%;   
+}
 .container{
     margin: auto;
-    width: 80%;   
+    width: 80%;  
+    text-align: center;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.163);
 }
 .text-white{
     color:white;
 }
-.p{
+.text-center{
     text-align: center;
 }
-.bg-div{
-    background-color: lightgray;
-}
+
 .card{
-    width: 30%;
+    width: 30%;   
     vertical-align: top;
     display: inline-block;
-    border: 2px solid;
-    border-color: darkgray;
-    border-radius: 37%;
-    
+    border: 1px solid;
+    border-color: lightgray;
+    border-radius: 10px;
     margin-top: 5%;
 }
 .icon{
-    margin: auto;
+    height: 55px;
     border-radius: 50%;
-    border-color: blue;
+    background-color: lightgrey;
+    font-size: 50px;
+    color: darkblue;
+    margin: 30px 0px;
 }
 /*costemzed classes*/
+#img-bg{
+    background-image:url(../image/background_clean.png) ;
+    background-color: black;
+    background-size: 100%;
+}
 nav{
     padding: 1% 0%;
 }
 
 nav ul {
     margin-left: 84%;
+    position: fixed;
+    left: -3%;
+    top: 4%;
 }
 nav li , nav h2 , nav ul{
     display: inline-block;
 }
 .title{
     text-align: center;
+    font-size: 30px;
+    margin-top: 65px;
+    margin-bottom: 15px;
+}
+.margin-right-left{
+    margin-right: 4.5%;
+    margin-left: 4.5%;
+}
+.margin-top-bottom{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.button{
+    margin-top: 30px;
+    padding-bottom: 80px;
+}
+.button1{
+    background-color: goldenrod;
+    border-color: goldenrod;
+    color: black;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 30px;   
+}
+.button2{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+}
+.padding-top-bottom{
+    padding-top: 140px;
+    padding-bottom: 21px;
+}
+.font-size{
     font-size: 50px;
 }

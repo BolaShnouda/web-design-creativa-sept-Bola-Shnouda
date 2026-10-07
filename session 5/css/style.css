@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+#bg-img {
+    background-image: url(../image/istockphoto-1696781145-612x612.jpg);
+    background-color: black;   
+    background-size: 100% 100%;   
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.493);
+}
+.text-white{
+    color:white;
+}
+.text-orange{
+    color: orange;
+}
+.text-lightgray{
+    color: lightgray;
+}
+.main-container{
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.second-container{
+    width: 47%;
+    display: inline-block;
+}
+.form-container{
+    width: 76%;
+    margin: auto;
+}
+.title1{
+    font-size: 45px;
+}
+
+.hr{
+    width: 6%;
+    border:  white solid;
+    margin-top: 3%;
+    margin-bottom: 3%;      
+}
+.form{
+    background-color: white;
+    margin-left: 45%;
+    border: none;
+}
+.title-form{
+    background-color: lightgray;
+    color: black;
+    font-size: 21px;
+    text-align: center;
+    padding: 5px;
+
+}
+.bg-button{
+    border: white solid;
+    background-color: transparent;
+    padding:8px;
+    margin-top: 5%;
+}
+.text-form{
+    font-size: 15px;
+    color: gray;
+}
+.button-form{
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 5%;
+}
+.input-form{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    display: inline-block;
+     padding-right: 76px;
+}
+.second-section{
+    width: 30%;
+    border: solid lightgray;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    position: relative;
+}
+.blue-text{
+    color: blue;
+}
+
+.icon{
+    border-radius: 50%;  
+    margin: 20px 0px;
+    font-size: 35px;
+    background-color: lightgray;
+
+}
+.main-icon{
+    font-size: 60px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: calc(100% - 30px);
+    left: 40%;
+}
+html{
+    scroll-behavior: smooth;
+}
+.margin-top{
+    margin-top: 55px;
+}
+.margin-right-left{
+    margin: 0px 55px;
+}
