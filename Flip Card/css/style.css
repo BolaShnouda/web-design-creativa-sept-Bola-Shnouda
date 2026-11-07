@@ -63,6 +63,10 @@
     transform: rotateY(180deg);
     background-color: white;
 }
+.flip-card:hover .back h2{
+    animation-name: changePosBack ;
+    animation-duration: 2s;
+}
 
 .text-white{
     color: white;  
@@ -125,10 +129,7 @@
 }
 .front-text-title{
     width: 78%;
-    animation-name: changePosFront ;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-play-state: paused;
+    
 }
 @keyframes changePosFront{
     0%{
@@ -138,14 +139,12 @@
         transform: translateY(-20px);
     }
 }
-.second-text-title{
-    animation-name: changePosBack;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-play-state: paused;
-}
+
 @keyframes changePosBack{
     0%{
-        transform: translateY(20px);
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0);
     }
 }
